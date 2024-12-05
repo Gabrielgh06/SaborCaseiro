@@ -26,40 +26,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/about.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhYm91dC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/booking.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxib29raW5nLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/contact.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjb250YWN0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/menu.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxtZW51LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/service.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzZXJ2aWNlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/team.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0ZWFtLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Home/testimonial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVx0ZXN0aW1vbmlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/gabri/OneDrive/Área de Trabalho/Sabor Caseiro/SaborCaseiro/Views/Shared/Error.cshtml]

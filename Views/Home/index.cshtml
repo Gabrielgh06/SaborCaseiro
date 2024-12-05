@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
 <head>
     <meta charset="utf-8">
     <title>Sabor Caseiro</title>
@@ -14,7 +19,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -35,7 +42,8 @@
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -46,7 +54,7 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="/Home/Index" class="navbar-brand p-0">
                     <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Sabor Caseiro</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
@@ -55,21 +63,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">Sobre</a>
-                        <a href="service.html" class="nav-item nav-link">Serviços</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
+                        <a href="/Home/Index" class="nav-item nav-link active">Home</a>
+                        <a href="/Home/About" class="nav-item nav-link">Sobre</a>
+                        <a href="/Home/Service" class="nav-item nav-link">Serviços</a>
+                        <a href="/Home/Menu" class="nav-item nav-link">Menu</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Reservas</a>
-                                <a href="team.html" class="dropdown-item">Nosso Time</a>
-                                <a href="testimonial.html" class="dropdown-item">Testemunhas</a>
+                                <a href="/Home/Booking" class="dropdown-item">Reservas</a>
+                                <a href="/Home/Team" class="dropdown-item">Nosso Time</a>
+                                <a href="/Home/Testimonial" class="dropdown-item">Testemunhas</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contato</a>
+                        <a href="/Home/Contact" class="nav-item nav-link">Contato</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Reserve uma mesa</a>
+                    <a href="/Home/Booking" class="btn btn-primary py-2 px-4">Reserve uma mesa</a>
                 </div>
             </nav>
 
@@ -77,9 +85,14 @@
                 <div class="container my-5 py-5">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Aproveite nossa<br>Deliciosa Comida</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">Comida feita com amor, ingredientes frescos e receitas tradicionais que trazem o aconchego de casa. Venha desfrutar de pratos únicos, cheios de sabor e memórias afetivas, em um ambiente acolhedor e especial.</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Reserve uma Mesa</a>
+                            <h1 class="display-3 text-white animated slideInLeft">Aproveite nossa<br>Deliciosa Comida
+                            </h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2">Comida feita com amor, ingredientes
+                                frescos e receitas tradicionais que trazem o aconchego de casa. Venha desfrutar de
+                                pratos únicos, cheios de sabor e memórias afetivas, em um ambiente acolhedor e especial.
+                            </p>
+                            <a href="/Home/Booking"
+                                class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Reserve uma Mesa</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="img/hero.png" alt="">
@@ -100,7 +113,8 @@
                             <div class="p-4">
                                 <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
                                 <h5>Master Chefs</h5>
-                                <p>Com talento e paixão, nossos chefs transformam receitas tradicionais em verdadeiras obras-primas. Experimente pratos únicos feitos com cuidado e amor! </p>
+                                <p>Com talento e paixão, nossos chefs transformam receitas tradicionais em verdadeiras
+                                    obras-primas. Experimente pratos únicos feitos com cuidado e amor! </p>
                             </div>
                         </div>
                     </div>
@@ -109,7 +123,8 @@
                             <div class="p-4">
                                 <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
                                 <h5>Quality Food</h5>
-                                <p>Ingredientes frescos, preparo cuidadoso e sabores autênticos. Aqui, tradição e excelência são nossos principais ingredientes!</p>
+                                <p>Ingredientes frescos, preparo cuidadoso e sabores autênticos. Aqui, tradição e
+                                    excelência são nossos principais ingredientes!</p>
                             </div>
                         </div>
                     </div>
@@ -118,7 +133,8 @@
                             <div class="p-4">
                                 <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
                                 <h5>Online Order</h5>
-                                <p>Com nosso delivery, o sabor da comida caseira chega até você, fresquinho e cheio de carinho. Peça agora e aproveite o conforto do nosso menu sem sair de casa!</p>
+                                <p>Com nosso delivery, o sabor da comida caseira chega até você, fresquinho e cheio de
+                                    carinho. Peça agora e aproveite o conforto do nosso menu sem sair de casa!</p>
                             </div>
                         </div>
                     </div>
@@ -127,7 +143,9 @@
                             <div class="p-4">
                                 <i class="fa fa-3x fa-headset text-primary mb-4"></i>
                                 <h5>24/7 Service</h5>
-                                <p>Bateu fome de madrugada? Ou precisa de uma refeição especial a qualquer hora do dia? Nosso serviço de delivery 24/7 garante que você aproveite o sabor da comida caseira sempre que quiser.</p>
+                                <p>Bateu fome de madrugada? Ou precisa de uma refeição especial a qualquer hora do dia?
+                                    Nosso serviço de delivery 24/7 garante que você aproveite o sabor da comida caseira
+                                    sempre que quiser.</p>
                             </div>
                         </div>
                     </div>
@@ -144,28 +162,37 @@
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
+                                    src="img/about-1.jpg">
                             </div>
                             <div class="col-6 text-start">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s"
+                                    src="img/about-2.jpg" style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                                <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s"
+                                    src="img/about-3.jpg">
                             </div>
                             <div class="col-6 text-end">
-                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                                <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
+                                    src="img/about-4.jpg">
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Sobre Nós</h5>
                         <h1 class="mb-4">Bem-Vindo ao <i class="fa fa-utensils text-primary me-2"></i>Sabor Caseiro</h1>
-                        <p class="mb-4">No Sabor Caseiro, você encontra o conforto e o sabor das melhores receitas feitas com amor, como na casa da vovó.</p>
-                        <p class="mb-4">Com ingredientes frescos, temperos tradicionais e um toque especial de carinho, nossos pratos são pensados para trazer memórias afetivas e experiências únicas à sua mesa. Venha descobrir o verdadeiro sabor de comida caseira em um ambiente acolhedor e cheio de charme!</p>
+                        <p class="mb-4">No Sabor Caseiro, você encontra o conforto e o sabor das melhores receitas
+                            feitas com amor, como na casa da vovó.</p>
+                        <p class="mb-4">Com ingredientes frescos, temperos tradicionais e um toque especial de carinho,
+                            nossos pratos são pensados para trazer memórias afetivas e experiências únicas à sua mesa.
+                            Venha descobrir o verdadeiro sabor de comida caseira em um ambiente acolhedor e cheio de
+                            charme!</p>
                         <div class="row g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15
+                                    </h1>
                                     <div class="ps-4">
                                         <p class="mb-0">Anos de</p>
                                         <h6 class="text-uppercase mb-0">Experiência</h6>
@@ -174,7 +201,8 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                    <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50
+                                    </h1>
                                     <div class="ps-4">
                                         <p class="mb-0">Populares</p>
                                         <h6 class="text-uppercase mb-0">Master Chefs</h6>
@@ -228,7 +256,8 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -253,23 +282,26 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <input type="text" class="form-control datetimepicker-input" id="datetime"
+                                            placeholder="Date & Time" data-target="#date3"
+                                            data-toggle="datetimepicker" />
                                         <label for="datetime">Data & Horário</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select" id="select1">
-                                          <option value="1">1 Pessoa</option>
-                                          <option value="2">2 Pessoas</option>
-                                          <option value="3">3 Pessoas</option>
+                                            <option value="1">1 Pessoa</option>
+                                            <option value="2">2 Pessoas</option>
+                                            <option value="3">3 Pessoas</option>
                                         </select>
                                         <label for="select1">No Of People</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Special Request" id="message"
+                                            style="height: 100px"></textarea>
                                         <label for="message">Observações especiais</label>
                                     </div>
                                 </div>
@@ -293,7 +325,8 @@
                     <div class="modal-body">
                         <!-- 16:9 aspect ratio -->
                         <div class="ratio ratio-16x9">
-                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always" allow="autoplay"></iframe>
+                            <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
+                                allowscriptaccess="always" allow="autoplay"></iframe>
                         </div>
                     </div>
                 </div>
@@ -382,9 +415,11 @@
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>A comida é maravilhosa, com aquele gostinho de casa que me lembra as refeições da minha infância. </p>
+                        <p>A comida é maravilhosa, com aquele gostinho de casa que me lembra as refeições da minha
+                            infância. </p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                                style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Maria F.</h5>
                                 <small>Professora</small>
@@ -393,9 +428,11 @@
                     </div>
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Simplesmente incrível! O sabor é inigualável e a entrega 24/7 salvou minha madrugada. Vou pedir sempre!</p>
+                        <p>Simplesmente incrível! O sabor é inigualável e a entrega 24/7 salvou minha madrugada. Vou
+                            pedir sempre!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                                style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">João R.</h5>
                                 <small>Médico</small>
@@ -404,9 +441,11 @@
                     </div>
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Os pratos são deliciosos e feitos com muito cuidado. Só demorou um pouco na entrega, mas valeu a espera!</p>
+                        <p>Os pratos são deliciosos e feitos com muito cuidado. Só demorou um pouco na entrega, mas
+                            valeu a espera!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                                style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Mario L.</h5>
                                 <small>Atleta</small>
@@ -415,9 +454,11 @@
                     </div>
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>O melhor restaurante de comida caseira que já experimentei! Tudo fresco, bem feito e entregue rapidinho. Nota 10!</p>
+                        <p>O melhor restaurante de comida caseira que já experimentei! Tudo fresco, bem feito e entregue
+                            rapidinho. Nota 10!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg"
+                                style="width: 50px; height: 50px;">
                             <div class="ps-3">
                                 <h5 class="mb-1">Ana L.</h5>
                                 <small>Modelo</small>
@@ -463,8 +504,10 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Your email">
+                            <button type="button"
+                                class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
                         </div>
                     </div>
                 </div>
@@ -504,6 +547,58 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Função para buscar os pratos da API
+            async function fetchPratos() {
+                try {
+                    const response = await fetch('https://localhost:5000/api/pratos'); // Substitua pelo endpoint correto da sua API
+                    if (!response.ok) {
+                        throw new Error(`Erro na API: ${response.status}`);
+                    }
+
+                    const pratos = await response.json();
+                    renderMenuItems(pratos); // Chama a função para renderizar os pratos
+                } catch (error) {
+                    console.error('Erro ao carregar os pratos:', error);
+                }
+            }
+
+            // Função para renderizar os pratos no HTML
+            function renderMenuItems(pratos) {
+                const menuItemsContainer = document.getElementById("menu-items"); // Certifica-se de que o ID está correto
+                if (!menuItemsContainer) {
+                    console.error("Elemento com ID 'menu-items' não encontrado.");
+                    return;
+                }
+
+                menuItemsContainer.innerHTML = ""; // Limpa o container
+                pratos.forEach((prato) => {
+                    const pratoHtml = `
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                        <img class="flex-shrink-0 img-fluid rounded" src="${prato.imagemUrl || 'img/placeholder.jpg'}"
+                            alt="${prato.nome}" style="width: 80px;">
+                        <div class="w-100 d-flex flex-column text-start ps-4">
+                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                <span>${prato.nome}</span>
+                                <span class="text-primary">R$${prato.preco.toFixed(2)}</span>
+                            </h5>
+                            <small class="fst-italic">${prato.descricao}</small>
+                        </div>
+                    </div>
+                </div>
+                `;
+                    menuItemsContainer.insertAdjacentHTML("beforeend", pratoHtml);
+                });
+            }
+
+            // Chama a função para buscar os pratos ao carregar a página
+            fetchPratos();
+        });
+    </script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
