@@ -150,6 +150,7 @@ C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\n
 C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\SaborCaseiro.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\SaborCaseiro.RazorAssemblyInfo.cache
 C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\SaborCaseiro.RazorAssemblyInfo.cs
+C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\SaborCaseiro.sourcelink.json
 C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\gabri\OneDrive\Área de Trabalho\Sabor Caseiro\SaborCaseiro\obj\Debug\net8.0\staticwebassets\msbuild.SaborCaseiro.Microsoft.AspNetCore.StaticWebAssets.props

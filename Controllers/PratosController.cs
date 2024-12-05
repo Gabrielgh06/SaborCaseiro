@@ -12,12 +12,41 @@ public class PratosController : ControllerBase
         _context = context;
     }
 
+    // [HttpGet]
+    // public IActionResult Get()
+    // {
+    //     var pratos = _context.Pratos?.ToList();
+    //     if (pratos == null) return NotFound();
+    //     return Ok(pratos);
+    // }
+
     [HttpGet]
     public IActionResult Get()
     {
-        var pratos = _context.Pratos?.ToList();
-        if (pratos == null) return NotFound();
-        return Ok(pratos);
+        try
+        {
+            if (_context.Pratos == null)
+            {
+                Console.WriteLine("Tabela 'Pratos' não foi inicializada no banco de dados.");
+                return Problem("Tabela 'Pratos' não foi inicializada no banco de dados.");
+            }
+
+            var pratos = _context.Pratos.ToList();
+
+            if (pratos == null || !pratos.Any())
+            {
+                Console.WriteLine("Nenhum prato encontrado.");
+                return NotFound("Nenhum prato encontrado.");
+            }
+
+            Console.WriteLine($"Pratos retornados: {pratos.Count}");
+            return Ok(pratos);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Erro ao obter pratos: {ex.Message}");
+            return StatusCode(500, "Erro interno no servidor.");
+        }
     }
 
     [HttpGet("{id}")]
