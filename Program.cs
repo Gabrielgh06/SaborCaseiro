@@ -29,7 +29,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseStaticFiles();
+app.UseStaticFiles(); // Servir arquivos estáticos (CSS, JS, imagens)
 
 app.UseRouting();
 
@@ -41,5 +41,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+// Mapear Razor Pages
+app.MapRazorPages();
 
 app.Run();
